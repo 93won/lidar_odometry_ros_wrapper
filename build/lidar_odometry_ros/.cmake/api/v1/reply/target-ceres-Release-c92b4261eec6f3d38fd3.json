@@ -1,0 +1,2439 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "ceres-solver/lib/libceres.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_install",
+			"ament_cmake_symlink_install_targets",
+			"install",
+			"add_compile_options",
+			"add_definitions",
+			"target_link_libraries",
+			"target_include_directories",
+			"target_compile_features"
+		],
+		"files" : 
+		[
+			"lidar_odometry/thirdparty/ceres-solver/internal/ceres/CMakeLists.txt",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 360,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 37,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 50,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 5,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 289,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 299,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 301,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 353,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 311,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 264,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "  -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "CERES_CXSPARSE_VERSION=\"3.2.0\""
+				},
+				{
+					"backtrace" : 8,
+					"define" : "GFLAGS_IS_A_DLL=0"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "GOOGLE_GLOG_DLL_DECL="
+				},
+				{
+					"backtrace" : 8,
+					"define" : "GOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS="
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/ceres-solver/config"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/usr/include/suitesparse"
+				},
+				{
+					"backtrace" : 13,
+					"isSystem" : true,
+					"path" : "/usr/include/eigen3"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					14
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316
+			]
+		}
+	],
+	"id" : "ceres::@f9236adfed632a8de8b4",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 4,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros"
+		}
+	},
+	"name" : "ceres",
+	"nameOnDisk" : "libceres.a",
+	"paths" : 
+	{
+		"build" : "ceres-solver/internal/ceres",
+		"source" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/parallel_for_cxx.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/thread_pool.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/accelerate_sparse.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/array_utils.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/blas.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_evaluate_preparer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_jacobi_preconditioner.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_jacobian_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_random_access_dense_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_random_access_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_random_access_sparse_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_sparse_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_structure.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/c_api.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/canonical_views_clustering.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/cgnr_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/callbacks.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_jacobian_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/conditioned_cost_function.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/conjugate_gradients_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/context.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/context_impl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/coordinate_descent_minimizer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/corrector.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/covariance.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/covariance_impl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/cxsparse.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_normal_cholesky_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_qr_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_sparse_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/detect_structure.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dogleg_strategy.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/evaluator.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/eigensparse.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/file.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/float_suitesparse.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/float_cxsparse.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/function_sample.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/gradient_checker.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/gradient_checking_cost_function.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/gradient_problem.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/gradient_problem_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/implicit_schur_complement.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/inner_product_computer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/is_close.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/iterative_refiner.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/iterative_schur_complement_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/levenberg_marquardt_strategy.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/lapack.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search_direction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search_minimizer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search_preprocessor.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_least_squares_problems.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_operator.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/local_parameterization.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/loss_function.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/low_rank_inverse_hessian.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/minimizer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/normal_prior.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/parallel_utils.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block_ordering.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/polynomial.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/preconditioner.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/preprocessor.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/problem.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/problem_impl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/program.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/reorder_program.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/residual_block.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/residual_block_utils.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_complement_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_jacobi_preconditioner.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_templates.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/scratch_evaluate_preparer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/single_linkage_clustering.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/solver_utils.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_cholesky.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/subset_preconditioner.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/split.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/stringprintf.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/suitesparse.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/thread_token_provider.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/triplet_sparse_matrix.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_preprocessor.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_minimizer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_step_evaluator.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_strategy.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/types.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/visibility.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/visibility_based_preconditioner.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/wall_time.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/accelerate_sparse.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/array_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/blas.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_evaluate_preparer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_jacobi_preconditioner.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_jacobian_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_random_access_dense_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_random_access_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_sparse_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_structure.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/bundle_adjustment_test_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/callbacks.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/canonical_views_clustering.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/casts.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/cgnr_linear_operator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/cgnr_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_jacobian_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/concurrent_queue.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/conjugate_gradients_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/context_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/coordinate_descent_minimizer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/corrector.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/covariance_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/cxsparse.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_jacobian_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_normal_cholesky_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_qr_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_sparse_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/detect_structure.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dogleg_strategy.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_finalizer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/eigensparse.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/evaluator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/evaluator_test_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/execution_summary.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/file.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/float_cxsparse.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/float_suitesparse.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/function_sample.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/gradient_checking_cost_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/gradient_problem_evaluator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/graph.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/graph_algorithms.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/implicit_schur_complement.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/inner_product_computer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/invert_psd_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/is_close.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/iterative_refiner.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/iterative_schur_complement_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/lapack.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search_direction.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search_minimizer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search_preprocessor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_least_squares_problems.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_operator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/low_rank_inverse_hessian.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/map_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/minimizer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/numeric_diff_test_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/pair_hash.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/parallel_for.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/parallel_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block_ordering.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/polynomial.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/preconditioner.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/preprocessor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/problem_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/program.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/program_evaluator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/random.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/reorder_program.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/residual_block.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/residual_block_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_complement_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_jacobi_preconditioner.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_templates.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/scoped_thread_token.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/scratch_evaluate_preparer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/single_linkage_clustering.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/small_blas.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/small_blas_generic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/solver_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_cholesky.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/split.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/stl_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/stringprintf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/subset_preconditioner.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/suitesparse.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/test_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/thread_pool.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/thread_token_provider.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/tiny_solver_test_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/triplet_sparse_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_minimizer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_preprocessor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_step_evaluator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_strategy.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/visibility.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/visibility_based_preconditioner.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/wall_time.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/autodiff_cost_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/autodiff_first_order_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/autodiff_local_parameterization.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/c_api.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/ceres.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/conditioned_cost_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/context.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/cost_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/cost_function_to_functor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/covariance.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/crs_matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/cubic_interpolation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/dynamic_cost_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/dynamic_numeric_diff_cost_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/evaluation_callback.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/first_order_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/gradient_checker.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/gradient_problem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/gradient_problem_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/iteration_callback.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/jet.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/local_parameterization.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/loss_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/normal_prior.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/numeric_diff_cost_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/numeric_diff_options.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/ordered_groups.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/problem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/rotation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/sized_cost_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/tiny_solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/tiny_solver_autodiff_function.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/tiny_solver_cost_function_adapter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/types.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/version.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/array_selector.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/autodiff.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/disable_warnings.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/eigen.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/fixed_array.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/householder_vector.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/integer_sequence_algorithm.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/line_parameterization.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/memory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/numeric_diff.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/parameter_dims.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/port.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/reenable_warnings.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/variadic_evaluate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_2_2.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_2_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_2_4.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_2_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_4.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_6.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_9.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_4.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_6.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_8.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_9.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_d_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_3_3_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_4_4_2.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_4_4_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_4_4_4.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_4_4_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_d_d_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_2_2.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_2_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_2_4.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_2_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_4.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_6.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_9.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_4.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_6.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_8.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_9.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_d_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_3_3_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_4_4_2.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_4_4_3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_4_4_4.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_4_4_d.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_d_d_d.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

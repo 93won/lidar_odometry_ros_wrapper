@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/lidar_odometry_node" "TARGETS" "lidar_odometry_node" "DESTINATION" "lib/lidar_odometry_ros")

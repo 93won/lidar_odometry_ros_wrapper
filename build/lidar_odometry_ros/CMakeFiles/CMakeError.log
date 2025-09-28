@@ -1,0 +1,55 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_111a1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_111a1.dir/build.make CMakeFiles/cmTC_111a1.dir/build
+gmake[1]: 디렉터리 '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_111a1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_111a1.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_111a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_111a1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_111a1.dir/CheckFunctionExists.c.o -o cmTC_111a1 
+/usr/bin/ld: CMakeFiles/cmTC_111a1.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_111a1.dir/build.make:99: cmTC_111a1] 오류 1
+gmake[1]: 디렉터리 '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/CMakeFiles/CMakeTmp' 나감
+gmake: *** [Makefile:127: cmTC_111a1/fast] 오류 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_554e0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_554e0.dir/build.make CMakeFiles/cmTC_554e0.dir/build
+gmake[1]: 디렉터리 '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_554e0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_554e0.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_554e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_554e0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_554e0.dir/CheckFunctionExists.c.o -o cmTC_554e0  /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -lm -ldl 
+/usr/bin/ld: CMakeFiles/cmTC_554e0.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_554e0.dir/build.make:102: cmTC_554e0] 오류 1
+gmake[1]: 디렉터리 '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/CMakeFiles/CMakeTmp' 나감
+gmake: *** [Makefile:127: cmTC_554e0/fast] 오류 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ea587/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ea587.dir/build.make CMakeFiles/cmTC_ea587.dir/build
+gmake[1]: 디렉터리 '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_ea587.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_ea587.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ea587
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea587.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_ea587.dir/CheckFunctionExists.c.o -o cmTC_ea587  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -fortranlibs 
+cc: error: unrecognized command-line option ‘-fortranlibs’
+gmake[1]: *** [CMakeFiles/cmTC_ea587.dir/build.make:103: cmTC_ea587] 오류 1
+gmake[1]: 디렉터리 '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/CMakeFiles/CMakeTmp' 나감
+gmake: *** [Makefile:127: cmTC_ea587/fast] 오류 2
+
+
+

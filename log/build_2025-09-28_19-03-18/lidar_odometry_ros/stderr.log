@@ -1,0 +1,1163 @@
+[0m-- Detected available Ceres threading models: [CXX_THREADS, OPENMP, NO_THREADS][0m
+[0m-- Building with C++17[0m
+[0m-- Found Eigen version 3.4.0: /usr/include/eigen3[0m
+[0m-- Enabling use of Eigen as a sparse linear algebra library.[0m
+[0m-- Found LAPACK library: /usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so;/usr/lib/x86_64-linux-gnu/libf77blas.so;/usr/lib/x86_64-linux-gnu/libatlas.so[0m
+[0m-- Building without SuiteSparse.[0m
+[0m-- Found CXSparse version: 3.2.0, building with CXSparse.[0m
+[0m-- Building without Apple's Accelerate sparse support.[0m
+[0m-- Found Google Flags (gflags) version 2.2.2: /usr/lib/x86_64-linux-gnu/cmake/gflags[0m
+[0m-- Found Google Log (glog). Assuming glog was built with gflags support as gflags was found. This will make gflags a public dependency of Ceres.[0m
+[0m-- Using Ceres threading model: CXX_THREADS[0m
+[0m-- Building Ceres as a static library.[0m
+[0m-- No build type specified; defaulting to CMAKE_BUILD_TYPE=Release.[0m
+[0m-- Do not build any example.[0m
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/cgnr_solver.h:36[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/cgnr_solver.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/conjugate_gradients_solver.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/conjugate_gradients_solver.cc:40[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preconditioner.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_jacobi_preconditioner.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/cxsparse.cc:40[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_jacobian_writer.cc:37[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/coordinate_descent_minimizer.cc:40[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/block_evaluate_preparer.cc:37[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/coordinate_descent_minimizer.cc:43[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/covariance_impl.cc:46[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_jacobian_writer.cc:38[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/covariance_impl.cc:53[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_normal_cholesky_solver.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_normal_cholesky_solver.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_jacobian_writer.cc:39[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dogleg_strategy.h:35[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dogleg_strategy.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_qr_solver.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_qr_solver.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.cc:35[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.cc:36[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:42[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_cholesky.h:41[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/float_suitesparse.h:41[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/float_suitesparse.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_cholesky.h:41[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/float_cxsparse.h:41[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/float_cxsparse.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/eigensparse.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/eigensparse.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/evaluator.cc:38[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/dense_jacobian_writer.h:39[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/evaluator.cc:40[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/inner_product_computer.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/inner_product_computer.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/implicit_schur_complement.h:42[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/implicit_schur_complement.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_cholesky.h:41[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/iterative_refiner.cc:36[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/iterative_schur_complement_solver.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_strategy.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:36[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/levenberg_marquardt_strategy.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/lapack.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/lapack.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/gradient_checking_cost_function.cc:44[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/gradient_checking_cost_function.cc:[m[K In function ‘[01m[Kceres::internal::ProblemImpl* ceres::internal::CreateGradientCheckingProblemImpl(ceres::internal::ProblemImpl*, double, double, ceres::internal::GradientCheckingIterationCallback*)[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/gradient_checking_cost_function.cc:247:36:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  247 |       StringAppendF(&extra_info, "[01;35m[K%p[m[K", [32m[Kparameter_block->mutable_user_state()[m[K);
+      |                                   [01;35m[K~^[m[K   [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                    [01;35m[K|[m[K                                      [32m[K|[m[K
+      |                                    [01;35m[Kvoid*[m[K                                  [32m[Kdouble*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preprocessor.h:43[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search_preprocessor.h:35[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/line_search_preprocessor.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_strategy.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_minimizer.h:42[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/minimizer.cc:34[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.cc:42[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block_ordering.cc:39[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preconditioner.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preconditioner.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preprocessor.h:43[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preprocessor.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/problem_impl.cc:46[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/problem_impl.cc:56[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/residual_block_utils.cc:40[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.cc:42[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/program.cc:40[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/problem_impl.cc:[m[K In member function ‘[01m[Kceres::internal::ResidualBlock* ceres::internal::ProblemImpl::AddResidualBlock(ceres::CostFunction*, ceres::LossFunction*, double* const*, int)[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/problem_impl.cc:308:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  308 |         blocks += StringPrintf(" [01;35m[K%p[m[K ", [32m[Kparameter_blocks[i][m[K);
+      |                                  [01;35m[K~^[m[K    [32m[K~~~~~~~~~~~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K                      [32m[K|[m[K
+      |                                   [01;35m[Kvoid*[m[K                  [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/problem_impl.cc:[m[K In member function ‘[01m[Kvoid ceres::internal::ProblemImpl::RemoveResidualBlock(ceres::internal::ResidualBlock*)[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/problem_impl.cc:415:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kceres::internal::ResidualBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  415 |       "Residual block to remove: [01;35m[K%p[m[K not found. This usually means "
+      |                                  [01;35m[K~^[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kvoid*[m[K
+......
+  425 |       [32m[Kresidual_block[m[K);
+      |       [32m[K~~~~~~~~~~~~~~[m[K               
+      |       [32m[K|[m[K
+      |       [32m[Kceres::internal::ResidualBlock*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/cxsparse.h:43[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/reorder_program.cc:39[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/reorder_program.cc:42[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/residual_block.cc:44[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/program.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preconditioner.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_jacobi_preconditioner.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_jacobi_preconditioner.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_templates.h:35[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_templates.cc:43[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/program.cc:[m[K In member function ‘[01m[Kbool ceres::internal::Program::ParameterBlocksAreFinite(std::string*) const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/program.cc:196:29:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  196 |           "ParameterBlock: [01;35m[K%p[m[K with size %d has at least one invalid value.\n"
+      |                            [01;35m[K~^[m[K
+      |                             [01;35m[K|[m[K
+      |                             [01;35m[Kvoid*[m[K
+......
+  199 |           [32m[Karray[m[K,
+      |           [32m[K~~~~~[m[K              
+      |           [32m[K|[m[K
+      |           [32m[Kconst double*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/program.cc:[m[K In member function ‘[01m[Kbool ceres::internal::Program::IsFeasible(std::string*) const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/program.cc:243:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  243 |               "ParameterBlock: [01;35m[K%p[m[K with size %d has at least one infeasible "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  248 |               [32m[Kparameters[m[K,
+      |               [32m[K~~~~~~~~~~[m[K         
+      |               [32m[K|[m[K
+      |               [32m[Kconst double*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/program.cc:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |               "ParameterBlock: [01;35m[K%p[m[K with size %d has at least one infeasible "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  272 |               [32m[Kparameters[m[K,
+      |               [32m[K~~~~~~~~~~[m[K         
+      |               [32m[K|[m[K
+      |               [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_complement_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_complement_solver.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/scratch_evaluate_preparer.cc:33[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preprocessor.h:43[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/solver.cc:46[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_cholesky.h:41[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_cholesky.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preconditioner.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/subset_preconditioner.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/subset_preconditioner.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_strategy.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_strategy.cc:33[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_strategy.h:37[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_minimizer.h:42[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_minimizer.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/preprocessor.h:43[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_preprocessor.h:35[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_preprocessor.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/visibility_based_preconditioner.h:59[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/visibility_based_preconditioner.cc:31[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/trust_region_preprocessor.cc:41[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:[m[K In member function ‘[01m[Kstd::string ceres::internal::ParameterBlock::ToString() const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Kconst ceres::internal::ParameterBlock*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=[01;35m[K%p[m[K, user_state=%p, state=%p, size=%d, "
+      |                 [01;35m[K~^[m[K
+      |                  [01;35m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K
+......
+  270 |         [32m[Kthis[m[K,
+      |         [32m[K~~~~[m[K      
+      |         [32m[K|[m[K
+      |         [32m[Kconst ceres::internal::ParameterBlock*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 3 has type ‘[01m[Kdouble*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=[01;35m[K%p[m[K, state=%p, size=%d, "
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kvoid*[m[K
+......
+  271 |         [32m[Kuser_state_[m[K,
+      |         [32m[K~~~~~~~~~~~[m[K              
+      |         [32m[K|[m[K
+      |         [32m[Kdouble*[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/parameter_block.h:267:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 4 has type ‘[01m[Kconst double*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  267 |         "{ this=%p, user_state=%p, state=[01;35m[K%p[m[K, size=%d, "
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kvoid*[m[K
+......
+  272 |         [32m[Kstate_[m[K,
+      |         [32m[K~~~~~~[m[K                             
+      |         [32m[K|[m[K
+      |         [32m[Kconst double*[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_2_2.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_2_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_2_4.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_4.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_2_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_9.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_3_6.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_4.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_6.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_8.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_9.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_4_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_3_3_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_2_d_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_4_4_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_4_4_2.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_4_4_4.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_4_4_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view.h:46[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:38[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/partitioned_matrix_view_d_d_d.cc:42[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_2_2.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_2_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_2_4.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_2_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_6.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_4.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_3_9.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_6.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_4.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_8.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_4_9.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_2_d_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_4_4_2.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_4_4_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_3_3_3.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_4_4_4.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_4_4_d.cc:47[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/linear_solver.h:44[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator.h:45[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/schur_eliminator_impl.h:65[m[K,
+                 from [01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/generated/schur_eliminator_d_d_d.cc:42[m[K:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:143:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  143 |   [01;35m[Kconst[m[K StorageType storage_type() const { return storage_type_; }
+      |   [01;35m[K^~~~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/optimization/Parameters.cpp:[m[K In member function ‘[01m[Kvirtual bool lidar_odometry::optimization::SE3GlobalParameterization::ComputeJacobian(const double*, double*) const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/optimization/Parameters.cpp:54:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | bool SE3GlobalParameterization::ComputeJacobian([01;35m[Kconst double* x[m[K,
+      |                                                 [01;35m[K~~~~~~~~~~~~~~^[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:[m[K In static member function ‘[01m[Kstatic Eigen::Matrix3f lidar_odometry::util::MathUtils::normalize_rotation_matrix(const Matrix3f&)[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:36:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdet[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   36 |     float [01;35m[Kdet[m[K = R_normalized.determinant();
+      |           [01;35m[K^~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:37:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Korthogonality_error[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   37 |     float [01;35m[Korthogonality_error[m[K = (R_normalized * R_normalized.transpose() - Eigen::Matrix3f::Identity()).norm();
+      |           [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:[m[K In static member function ‘[01m[Kstatic Eigen::Matrix3d lidar_odometry::util::MathUtils::normalize_rotation_matrix(const Matrix3d&)[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:63:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdet[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   63 |     double [01;35m[Kdet[m[K = R_normalized.determinant();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:64:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Korthogonality_error[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   64 |     double [01;35m[Korthogonality_error[m[K = (R_normalized * R_normalized.transpose() - Eigen::Matrix3d::Identity()).norm();
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K

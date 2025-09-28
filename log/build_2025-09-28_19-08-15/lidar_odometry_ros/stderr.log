@@ -1,0 +1,31 @@
+[0m-- Detected available Ceres threading models: [CXX_THREADS, OPENMP, NO_THREADS][0m
+[0m-- Building with C++17[0m
+[0m-- Found Eigen version 3.4.0: /usr/include/eigen3[0m
+[0m-- Enabling use of Eigen as a sparse linear algebra library.[0m
+[0m-- Found LAPACK library: /usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so;/usr/lib/x86_64-linux-gnu/libf77blas.so;/usr/lib/x86_64-linux-gnu/libatlas.so[0m
+[0m-- Building without SuiteSparse.[0m
+[0m-- Found CXSparse version: 3.2.0, building with CXSparse.[0m
+[0m-- Building without Apple's Accelerate sparse support.[0m
+[0m-- Found Google Flags (gflags) version 2.2.2: /usr/lib/x86_64-linux-gnu/cmake/gflags[0m
+[0m-- Found Google Log (glog). Assuming glog was built with gflags support as gflags was found. This will make gflags a public dependency of Ceres.[0m
+[0m-- Using Ceres threading model: CXX_THREADS[0m
+[0m-- Building Ceres as a static library.[0m
+[0m-- Do not build any example.[0m
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:[m[K In static member function ‘[01m[Kstatic Eigen::Matrix3f lidar_odometry::util::MathUtils::normalize_rotation_matrix(const Matrix3f&)[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:36:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdet[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   36 |     float [01;35m[Kdet[m[K = R_normalized.determinant();
+      |           [01;35m[K^~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:37:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Korthogonality_error[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   37 |     float [01;35m[Korthogonality_error[m[K = (R_normalized * R_normalized.transpose() - Eigen::Matrix3f::Identity()).norm();
+      |           [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:[m[K In static member function ‘[01m[Kstatic Eigen::Matrix3d lidar_odometry::util::MathUtils::normalize_rotation_matrix(const Matrix3d&)[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:63:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdet[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   63 |     double [01;35m[Kdet[m[K = R_normalized.determinant();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/util/MathUtils.cpp:64:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Korthogonality_error[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   64 |     double [01;35m[Korthogonality_error[m[K = (R_normalized * R_normalized.transpose() - Eigen::Matrix3d::Identity()).norm();
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/optimization/Parameters.cpp:[m[K In member function ‘[01m[Kvirtual bool lidar_odometry::optimization::SE3GlobalParameterization::ComputeJacobian(const double*, double*) const[m[K’:
+[01m[K/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/src/optimization/Parameters.cpp:54:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | bool SE3GlobalParameterization::ComputeJacobian([01;35m[Kconst double* x[m[K,
+      |                                                 [01;35m[K~~~~~~~~~~~~~~^[m[K

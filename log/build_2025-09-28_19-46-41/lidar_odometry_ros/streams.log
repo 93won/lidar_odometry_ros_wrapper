@@ -1,0 +1,85 @@
+[0.006s] Invoking command in '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros -- -j28 -l28
+[0.081s] [ 93%] Built target ceres
+[0.097s] [35m[1mConsolidate compiler generated dependencies of target lidar_odometry_node[0m
+[0.126s] [ 93%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_ros.cpp.o[0m
+[10.711s] [ 94%] [32m[1mLinking CXX executable lidar_odometry_node[0m
+[11.076s] [100%] Built target lidar_odometry_node
+[11.084s] Invoked command in '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros -- -j28 -l28
+[11.090s] Invoking command in '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros
+[11.093s] -- Install configuration: "Release"
+[11.094s] -- Execute custom install script
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/autodiff_cost_function.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/autodiff_first_order_function.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/autodiff_local_parameterization.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/c_api.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/ceres.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/conditioned_cost_function.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/context.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/cost_function.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/cost_function_to_functor.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/covariance.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/crs_matrix.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/cubic_interpolation.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/dynamic_autodiff_cost_function.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/dynamic_cost_function.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/dynamic_cost_function_to_functor.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/dynamic_numeric_diff_cost_function.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/evaluation_callback.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/first_order_function.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/gradient_checker.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/gradient_problem.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/gradient_problem_solver.h
+[11.094s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/iteration_callback.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/jet.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/local_parameterization.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/loss_function.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/normal_prior.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/numeric_diff_cost_function.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/numeric_diff_options.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/ordered_groups.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/problem.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/rotation.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/sized_cost_function.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/solver.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/tiny_solver.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/tiny_solver_autodiff_function.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/tiny_solver_cost_function_adapter.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/types.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/version.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/array_selector.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/autodiff.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/disable_warnings.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/eigen.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/fixed_array.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/householder_vector.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/integer_sequence_algorithm.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/line_parameterization.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/memory.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/numeric_diff.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/parameter_dims.h
+[11.095s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/port.h
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/reenable_warnings.h
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/variadic_evaluate.h
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/config.h
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/lib/cmake/Ceres/CeresConfig.cmake
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/lib/cmake/Ceres/CeresConfigVersion.cmake
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/lib/lidar_odometry_ros/lidar_odometry_node
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/launch/lidar_odometry.launch.py
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/config/kitti.yaml
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/rviz/lidar_odometry.rviz
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/ament_index/resource_index/package_run_dependencies/lidar_odometry_ros
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/ament_index/resource_index/parent_prefix_path/lidar_odometry_ros
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/ament_prefix_path.sh
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/ament_prefix_path.dsv
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/path.sh
+[11.096s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/path.dsv
+[11.097s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.bash
+[11.097s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.sh
+[11.097s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.zsh
+[11.097s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.dsv
+[11.097s] -- Symlinking: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/package.dsv
+[11.102s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/ament_index/resource_index/packages/lidar_odometry_ros
+[11.102s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/cmake/lidar_odometry_rosConfig.cmake
+[11.102s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/cmake/lidar_odometry_rosConfig-version.cmake
+[11.102s] -- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/package.xml
+[11.103s] Invoked command in '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros

@@ -1,0 +1,59 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_install",
+			"install"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake",
+			"lidar_odometry/thirdparty/ceres-solver/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 731,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Ceres",
+			"exportName" : "CeresExport",
+			"exportTargets" : 
+			[
+				{
+					"id" : "ceres::@f9236adfed632a8de8b4",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"ceres-solver/CMakeFiles/Export/lib/cmake/Ceres/CeresTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "ceres-solver",
+		"source" : "lidar_odometry/thirdparty/ceres-solver"
+	}
+}

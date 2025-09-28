@@ -1,0 +1,271 @@
+[0.000000] (-) TimerEvent: {}
+[0.000132] (lidar_odometry_ros) JobQueued: {'identifier': 'lidar_odometry_ros', 'dependencies': OrderedDict()}
+[0.000156] (lidar_odometry_ros) JobStarted: {'identifier': 'lidar_odometry_ros'}
+[0.003609] (lidar_odometry_ros) JobProgress: {'identifier': 'lidar_odometry_ros', 'progress': 'cmake'}
+[0.004280] (lidar_odometry_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/eugene/source/lidar_odometry_ros_wrapper', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros'], 'cwd': '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en'), ('USER', 'eugene'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eugene'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2045'), ('SYSTEMD_EXEC_PID', '2347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2342231'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eugene'), ('JOURNAL_STREAM', '8:12485'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eugene'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/eugene/.local/bin:/opt/ros/humble/bin:/home/eugene/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/eugene/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/eugene-MS-7E07:@/tmp/.ICE-unix/2325,unix/eugene-MS-7E07:/tmp/.ICE-unix/2325'), ('INVOCATION_ID', 'f932449daf444910b3cca3fb70b7a178'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6d023ad808.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.011591] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.072812] (lidar_odometry_ros) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.075712] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.088666] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.089776] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.092350] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.096462] (lidar_odometry_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.099744] (-) TimerEvent: {}
+[0.101846] (lidar_odometry_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.116117] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.116562] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.167024] (lidar_odometry_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.191298] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.199890] (-) TimerEvent: {}
+[0.203743] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.210856] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.219303] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.220963] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.255131] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.256557] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.257134] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.257161] (lidar_odometry_ros) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.265550] (lidar_odometry_ros) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.282196] (lidar_odometry_ros) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.282882] (lidar_odometry_ros) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[0.283131] (lidar_odometry_ros) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[0.283366] (lidar_odometry_ros) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[0.283583] (lidar_odometry_ros) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[0.283823] (lidar_odometry_ros) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[0.284104] (lidar_odometry_ros) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[0.284812] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[0.298688] (lidar_odometry_ros) StdoutLine: {'line': b'-- Detected Ceres version: 2.0.0 from /home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/include/ceres/version.h\n'}
+[0.299966] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Detected available Ceres threading models: [CXX_THREADS, OPENMP, NO_THREADS]\x1b[0m\n'}
+[0.300009] (-) TimerEvent: {}
+[0.300335] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Building with C++17\x1b[0m\n'}
+[0.300969] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found suitable version "3.4.0", minimum required is "3.3") \n'}
+[0.301013] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Found Eigen version 3.4.0: /usr/include/eigen3\x1b[0m\n'}
+[0.301036] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Enabling use of Eigen as a sparse linear algebra library.\x1b[0m\n'}
+[0.318502] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Found LAPACK library: /usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so;/usr/lib/x86_64-linux-gnu/libf77blas.so;/usr/lib/x86_64-linux-gnu/libatlas.so\x1b[0m\n'}
+[0.318547] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Building without SuiteSparse.\x1b[0m\n'}
+[0.319126] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Found CXSparse version: 3.2.0, building with CXSparse.\x1b[0m\n'}
+[0.319152] (lidar_odometry_ros) StderrLine: {'line': b"\x1b[0m-- Building without Apple's Accelerate sparse support.\x1b[0m\n"}
+[0.319634] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Found Google Flags (gflags) version 2.2.2: /usr/lib/x86_64-linux-gnu/cmake/gflags\x1b[0m\n'}
+[0.319751] (lidar_odometry_ros) StdoutLine: {'line': b'-- No preference for use of exported glog CMake configuration set, and no hints for include/library directories provided. Defaulting to preferring an installed/exported glog CMake configuration if available.\n'}
+[0.320321] (lidar_odometry_ros) StdoutLine: {'line': b'-- Found installed version of glog: /usr/lib/x86_64-linux-gnu/cmake/glog\n'}
+[0.320345] (lidar_odometry_ros) StdoutLine: {'line': b'-- Detected glog version: 0.4.0\n'}
+[0.320764] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Found Google Log (glog). Assuming glog was built with gflags support as gflags was found. This will make gflags a public dependency of Ceres.\x1b[0m\n'}
+[0.320787] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Using Ceres threading model: CXX_THREADS\x1b[0m\n'}
+[0.320812] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Building Ceres as a static library.\x1b[0m\n'}
+[0.321341] (lidar_odometry_ros) StdoutLine: {'line': b'-- Enabling CERES_USE_EIGEN_SPARSE in Ceres config.h\n'}
+[0.321364] (lidar_odometry_ros) StdoutLine: {'line': b'-- Enabling CERES_NO_SUITESPARSE in Ceres config.h\n'}
+[0.321384] (lidar_odometry_ros) StdoutLine: {'line': b'-- Enabling CERES_NO_ACCELERATE_SPARSE in Ceres config.h\n'}
+[0.321405] (lidar_odometry_ros) StdoutLine: {'line': b'-- Enabling CERES_USE_CXX_THREADS in Ceres config.h\n'}
+[0.323998] (lidar_odometry_ros) StderrLine: {'line': b'\x1b[0m-- Do not build any example.\x1b[0m\n'}
+[0.367950] (lidar_odometry_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.389374] (lidar_odometry_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[0.393170] (lidar_odometry_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros\n'}
+[0.398523] (lidar_odometry_ros) CommandEnded: {'returncode': 0}
+[0.398899] (lidar_odometry_ros) JobProgress: {'identifier': 'lidar_odometry_ros', 'progress': 'build'}
+[0.399462] (lidar_odometry_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros', '--', '-j28', '-l28'], 'cwd': '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en'), ('USER', 'eugene'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eugene'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2045'), ('SYSTEMD_EXEC_PID', '2347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2342231'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eugene'), ('JOURNAL_STREAM', '8:12485'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eugene'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/eugene/.local/bin:/opt/ros/humble/bin:/home/eugene/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/eugene/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/eugene-MS-7E07:@/tmp/.ICE-unix/2325,unix/eugene-MS-7E07:/tmp/.ICE-unix/2325'), ('INVOCATION_ID', 'f932449daf444910b3cca3fb70b7a178'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6d023ad808.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.400067] (-) TimerEvent: {}
+[0.453831] (lidar_odometry_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ceres\x1b[0m\n'}
+[0.500202] (-) TimerEvent: {}
+[0.530057] (lidar_odometry_ros) StdoutLine: {'line': b'[ 93%] Built target ceres\n'}
+[0.539632] (lidar_odometry_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lidar_odometry_node\x1b[0m\n'}
+[0.562860] (lidar_odometry_ros) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_ros.cpp.o\x1b[0m\n'}
+[0.600277] (-) TimerEvent: {}
+[0.700454] (-) TimerEvent: {}
+[0.800679] (-) TimerEvent: {}
+[0.900892] (-) TimerEvent: {}
+[1.001127] (-) TimerEvent: {}
+[1.101391] (-) TimerEvent: {}
+[1.201628] (-) TimerEvent: {}
+[1.301935] (-) TimerEvent: {}
+[1.402130] (-) TimerEvent: {}
+[1.502367] (-) TimerEvent: {}
+[1.602621] (-) TimerEvent: {}
+[1.702886] (-) TimerEvent: {}
+[1.803145] (-) TimerEvent: {}
+[1.903381] (-) TimerEvent: {}
+[2.003643] (-) TimerEvent: {}
+[2.103923] (-) TimerEvent: {}
+[2.204185] (-) TimerEvent: {}
+[2.304440] (-) TimerEvent: {}
+[2.404693] (-) TimerEvent: {}
+[2.504956] (-) TimerEvent: {}
+[2.605199] (-) TimerEvent: {}
+[2.705456] (-) TimerEvent: {}
+[2.805751] (-) TimerEvent: {}
+[2.906031] (-) TimerEvent: {}
+[3.006281] (-) TimerEvent: {}
+[3.106553] (-) TimerEvent: {}
+[3.206742] (-) TimerEvent: {}
+[3.306976] (-) TimerEvent: {}
+[3.407173] (-) TimerEvent: {}
+[3.507362] (-) TimerEvent: {}
+[3.607547] (-) TimerEvent: {}
+[3.707752] (-) TimerEvent: {}
+[3.807952] (-) TimerEvent: {}
+[3.908202] (-) TimerEvent: {}
+[4.008466] (-) TimerEvent: {}
+[4.108732] (-) TimerEvent: {}
+[4.208944] (-) TimerEvent: {}
+[4.309139] (-) TimerEvent: {}
+[4.409345] (-) TimerEvent: {}
+[4.509580] (-) TimerEvent: {}
+[4.609807] (-) TimerEvent: {}
+[4.710002] (-) TimerEvent: {}
+[4.810248] (-) TimerEvent: {}
+[4.910468] (-) TimerEvent: {}
+[5.010693] (-) TimerEvent: {}
+[5.110888] (-) TimerEvent: {}
+[5.211101] (-) TimerEvent: {}
+[5.311300] (-) TimerEvent: {}
+[5.411480] (-) TimerEvent: {}
+[5.511662] (-) TimerEvent: {}
+[5.611866] (-) TimerEvent: {}
+[5.712113] (-) TimerEvent: {}
+[5.812307] (-) TimerEvent: {}
+[5.912541] (-) TimerEvent: {}
+[6.012747] (-) TimerEvent: {}
+[6.112944] (-) TimerEvent: {}
+[6.213138] (-) TimerEvent: {}
+[6.313319] (-) TimerEvent: {}
+[6.413565] (-) TimerEvent: {}
+[6.513796] (-) TimerEvent: {}
+[6.614051] (-) TimerEvent: {}
+[6.714287] (-) TimerEvent: {}
+[6.814506] (-) TimerEvent: {}
+[6.914746] (-) TimerEvent: {}
+[7.014962] (-) TimerEvent: {}
+[7.115198] (-) TimerEvent: {}
+[7.215444] (-) TimerEvent: {}
+[7.315669] (-) TimerEvent: {}
+[7.415903] (-) TimerEvent: {}
+[7.516133] (-) TimerEvent: {}
+[7.616382] (-) TimerEvent: {}
+[7.716579] (-) TimerEvent: {}
+[7.816806] (-) TimerEvent: {}
+[7.917067] (-) TimerEvent: {}
+[8.017324] (-) TimerEvent: {}
+[8.117556] (-) TimerEvent: {}
+[8.217801] (-) TimerEvent: {}
+[8.318063] (-) TimerEvent: {}
+[8.418330] (-) TimerEvent: {}
+[8.518578] (-) TimerEvent: {}
+[8.618828] (-) TimerEvent: {}
+[8.719097] (-) TimerEvent: {}
+[8.819336] (-) TimerEvent: {}
+[8.919571] (-) TimerEvent: {}
+[9.019742] (-) TimerEvent: {}
+[9.119963] (-) TimerEvent: {}
+[9.220209] (-) TimerEvent: {}
+[9.320453] (-) TimerEvent: {}
+[9.420712] (-) TimerEvent: {}
+[9.520993] (-) TimerEvent: {}
+[9.621236] (-) TimerEvent: {}
+[9.721478] (-) TimerEvent: {}
+[9.821713] (-) TimerEvent: {}
+[9.921936] (-) TimerEvent: {}
+[10.022167] (-) TimerEvent: {}
+[10.122400] (-) TimerEvent: {}
+[10.222632] (-) TimerEvent: {}
+[10.322872] (-) TimerEvent: {}
+[10.423120] (-) TimerEvent: {}
+[10.523373] (-) TimerEvent: {}
+[10.623639] (-) TimerEvent: {}
+[10.723913] (-) TimerEvent: {}
+[10.824175] (-) TimerEvent: {}
+[10.924450] (-) TimerEvent: {}
+[11.024768] (-) TimerEvent: {}
+[11.125027] (-) TimerEvent: {}
+[11.225282] (-) TimerEvent: {}
+[11.325535] (-) TimerEvent: {}
+[11.425781] (-) TimerEvent: {}
+[11.526032] (-) TimerEvent: {}
+[11.626295] (-) TimerEvent: {}
+[11.726547] (-) TimerEvent: {}
+[11.742371] (lidar_odometry_ros) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable lidar_odometry_node\x1b[0m\n'}
+[11.826650] (-) TimerEvent: {}
+[11.927005] (-) TimerEvent: {}
+[12.027277] (-) TimerEvent: {}
+[12.105449] (lidar_odometry_ros) StdoutLine: {'line': b'[100%] Built target lidar_odometry_node\n'}
+[12.112445] (lidar_odometry_ros) CommandEnded: {'returncode': 0}
+[12.112820] (lidar_odometry_ros) JobProgress: {'identifier': 'lidar_odometry_ros', 'progress': 'install'}
+[12.117534] (lidar_odometry_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros'], 'cwd': '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en'), ('USER', 'eugene'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eugene'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2045'), ('SYSTEMD_EXEC_PID', '2347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2342231'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eugene'), ('JOURNAL_STREAM', '8:12485'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eugene'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/eugene/.local/bin:/opt/ros/humble/bin:/home/eugene/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/eugene/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/eugene-MS-7E07:@/tmp/.ICE-unix/2325,unix/eugene-MS-7E07:/tmp/.ICE-unix/2325'), ('INVOCATION_ID', 'f932449daf444910b3cca3fb70b7a178'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6d023ad808.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.121505] (lidar_odometry_ros) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[12.121887] (lidar_odometry_ros) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.121971] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/autodiff_cost_function.h\n'}
+[12.121993] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/autodiff_first_order_function.h\n'}
+[12.122056] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/autodiff_local_parameterization.h\n'}
+[12.122079] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/c_api.h\n'}
+[12.122124] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/ceres.h\n'}
+[12.122144] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/conditioned_cost_function.h\n'}
+[12.122206] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/context.h\n'}
+[12.122226] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/cost_function.h\n'}
+[12.122285] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/cost_function_to_functor.h\n'}
+[12.122304] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/covariance.h\n'}
+[12.122324] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/crs_matrix.h\n'}
+[12.122356] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/cubic_interpolation.h\n'}
+[12.122395] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/dynamic_autodiff_cost_function.h\n'}
+[12.122414] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/dynamic_cost_function.h\n'}
+[12.122448] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/dynamic_cost_function_to_functor.h\n'}
+[12.122481] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/dynamic_numeric_diff_cost_function.h\n'}
+[12.122521] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/evaluation_callback.h\n'}
+[12.122540] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/first_order_function.h\n'}
+[12.122573] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/gradient_checker.h\n'}
+[12.122608] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/gradient_problem.h\n'}
+[12.122640] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/gradient_problem_solver.h\n'}
+[12.122675] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/iteration_callback.h\n'}
+[12.122709] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/jet.h\n'}
+[12.122744] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/local_parameterization.h\n'}
+[12.122777] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/loss_function.h\n'}
+[12.122811] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/normal_prior.h\n'}
+[12.122840] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/numeric_diff_cost_function.h\n'}
+[12.122867] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/numeric_diff_options.h\n'}
+[12.122899] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/ordered_groups.h\n'}
+[12.122927] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/problem.h\n'}
+[12.122964] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/rotation.h\n'}
+[12.122995] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/sized_cost_function.h\n'}
+[12.123028] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/solver.h\n'}
+[12.123057] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/tiny_solver.h\n'}
+[12.123089] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/tiny_solver_autodiff_function.h\n'}
+[12.123121] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/tiny_solver_cost_function_adapter.h\n'}
+[12.123156] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/types.h\n'}
+[12.123189] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/version.h\n'}
+[12.123285] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/array_selector.h\n'}
+[12.123314] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/autodiff.h\n'}
+[12.123342] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/disable_warnings.h\n'}
+[12.123376] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/eigen.h\n'}
+[12.123411] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/fixed_array.h\n'}
+[12.123445] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/householder_vector.h\n'}
+[12.123481] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/integer_sequence_algorithm.h\n'}
+[12.123516] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/line_parameterization.h\n'}
+[12.123551] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/memory.h\n'}
+[12.123584] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/numeric_diff.h\n'}
+[12.123618] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/parameter_dims.h\n'}
+[12.123652] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/port.h\n'}
+[12.123687] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/reenable_warnings.h\n'}
+[12.123723] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/variadic_evaluate.h\n'}
+[12.123781] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/include/ceres/internal/config.h\n'}
+[12.123849] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/lib/cmake/Ceres/CeresConfig.cmake\n'}
+[12.123900] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/lib/cmake/Ceres/CeresConfigVersion.cmake\n'}
+[12.124005] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/lib/lidar_odometry_ros/lidar_odometry_node\n'}
+[12.124120] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/launch/lidar_odometry.launch.py\n'}
+[12.124217] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/config/kitti.yaml\n'}
+[12.124308] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/rviz/lidar_odometry.rviz\n'}
+[12.124371] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/ament_index/resource_index/package_run_dependencies/lidar_odometry_ros\n'}
+[12.124428] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/ament_index/resource_index/parent_prefix_path/lidar_odometry_ros\n'}
+[12.124483] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/ament_prefix_path.sh\n'}
+[12.124538] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/ament_prefix_path.dsv\n'}
+[12.124584] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/path.sh\n'}
+[12.124635] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/path.dsv\n'}
+[12.124683] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.bash\n'}
+[12.124731] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.sh\n'}
+[12.124778] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.zsh\n'}
+[12.124822] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.dsv\n'}
+[12.124855] (lidar_odometry_ros) StdoutLine: {'line': b'-- Symlinking: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/package.dsv\n'}
+[12.127322] (-) TimerEvent: {}
+[12.129773] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/ament_index/resource_index/packages/lidar_odometry_ros\n'}
+[12.129826] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/cmake/lidar_odometry_rosConfig.cmake\n'}
+[12.129864] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/cmake/lidar_odometry_rosConfig-version.cmake\n'}
+[12.129912] (lidar_odometry_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/package.xml\n'}
+[12.130835] (lidar_odometry_ros) CommandEnded: {'returncode': 0}
+[12.137533] (lidar_odometry_ros) JobEnded: {'identifier': 'lidar_odometry_ros', 'rc': 0}
+[12.137773] (-) EventReactorShutdown: {}

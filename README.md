@@ -2,12 +2,6 @@
 
 This package provides a ROS2 wrapper for the LiDAR Odometry system with Probabilistic Kernel Optimization (PKO). It enables real-time LiDAR-based odometry estimation in ROS2 environments.
 
-## Demo Video
-
-[![LiDAR Odometry Demo](https://img.youtube.com/vi/swrJY2EStrs/0.jpg)](https://youtu.be/swrJY2EStrs)
-
-Watch the demonstration of LiDAR odometry processing on KITTI dataset sequences.
-
 ## Features
 
 - ⚡ Real-time LiDAR odometry processing
@@ -38,9 +32,13 @@ Watch the demonstration of LiDAR odometry processing on KITTI dataset sequences.
 
 ## Installation
 
-### 1. Clone the Repository
+### 1. Setup Workspace and Clone Repository
 ```bash
-cd ~/ros2_ws/src
+# Create a new ROS2 workspace
+mkdir -p lidar_odom_ws/src
+cd lidar_odom_ws/src
+
+# Clone the repository
 git clone https://github.com/93won/lidar_odometry_ros_wrapper.git
 cd lidar_odometry_ros_wrapper
 
@@ -64,7 +62,7 @@ sudo apt install -y \
 
 ### 3. Build the Package
 ```bash
-cd ~/ros2_ws
+cd ../../  # Go back to lidar_odom_ws root
 colcon build --packages-select lidar_odometry_ros
 source install/setup.bash
 ```

@@ -1,0 +1,1 @@
+/home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/include/ceres/internal/integer_sequence_algorithm.h

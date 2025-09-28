@@ -1,0 +1,275 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.4.0
+-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+-- Checking for module 'flann'
+--   Found flann, version 1.9.1
+-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+-- looking for PCL_COMMON
+-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+-- looking for PCL_KDTREE
+-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+-- looking for PCL_OCTREE
+-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+-- looking for PCL_SEARCH
+-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+-- looking for PCL_SAMPLE_CONSENSUS
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+-- looking for PCL_FILTERS
+-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;FLANN::FLANN (Required is at least version "1.10") 
+-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+-- Detected Ceres version: 2.0.0 from /home/eugene/source/lidar_odometry_ros_wrapper/lidar_odometry/thirdparty/ceres-solver/include/ceres/version.h
+-- Found Eigen3: TRUE (found suitable version "3.4.0", minimum required is "3.3") 
+-- Found CXSparse: /usr/include/suitesparse (found version "3.2.0") 
+-- No preference for use of exported glog CMake configuration set, and no hints for include/library directories provided. Defaulting to preferring an installed/exported glog CMake configuration if available.
+-- Found installed version of glog: /usr/lib/x86_64-linux-gnu/cmake/glog
+-- Detected glog version: 0.4.0
+-- Found Glog: glog::glog  
+-- Performing Test CHECK_CXX_FLAG_Wmissing_declarations
+-- Performing Test CHECK_CXX_FLAG_Wmissing_declarations - Success
+-- Performing Test CHECK_CXX_FLAG_Wno_unknown_pragmas
+-- Performing Test CHECK_CXX_FLAG_Wno_unknown_pragmas - Success
+-- Performing Test CHECK_CXX_FLAG_Wno_sign_compare
+-- Performing Test CHECK_CXX_FLAG_Wno_sign_compare - Success
+-- Performing Test CHECK_CXX_FLAG_Wno_unused_parameter
+-- Performing Test CHECK_CXX_FLAG_Wno_unused_parameter - Success
+-- Performing Test CHECK_CXX_FLAG_Wno_missing_field_initializers
+-- Performing Test CHECK_CXX_FLAG_Wno_missing_field_initializers - Success
+-- Creating configured Ceres config.h output directory: /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/ceres-solver/config/ceres/internal
+-- Enabling CERES_USE_EIGEN_SPARSE in Ceres config.h
+-- Enabling CERES_NO_SUITESPARSE in Ceres config.h
+-- Enabling CERES_NO_ACCELERATE_SPARSE in Ceres config.h
+-- Enabling CERES_USE_CXX_THREADS in Ceres config.h
+-- Performing Test CHECK_CXX_FLAG_Wno_missing_declarations
+-- Performing Test CHECK_CXX_FLAG_Wno_missing_declarations - Success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros
+[  4%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/block_random_access_diagonal_matrix.cc.o[0m
+[  4%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/thread_pool.cc.o[0m
+[  4%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/block_evaluate_preparer.cc.o[0m
+[  4%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/block_jacobi_preconditioner.cc.o[0m
+[  4%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/block_jacobian_writer.cc.o[0m
+[  4%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/parallel_for_cxx.cc.o[0m
+[  5%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/block_random_access_matrix.cc.o[0m
+[  7%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/array_utils.cc.o[0m
+[  7%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/block_random_access_sparse_matrix.cc.o[0m
+[  7%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/blas.cc.o[0m
+[  7%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/block_random_access_dense_matrix.cc.o[0m
+[  8%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/block_sparse_matrix.cc.o[0m
+[  9%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/canonical_views_clustering.cc.o[0m
+[  9%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/cgnr_solver.cc.o[0m
+[  9%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/conditioned_cost_function.cc.o[0m
+[  9%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/compressed_col_sparse_matrix_utils.cc.o[0m
+[  5%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/accelerate_sparse.cc.o[0m
+[ 10%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/context.cc.o[0m
+[ 11%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/compressed_row_jacobian_writer.cc.o[0m
+[ 12%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/c_api.cc.o[0m
+[ 12%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/block_structure.cc.o[0m
+[ 13%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/conjugate_gradients_solver.cc.o[0m
+[ 13%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/corrector.cc.o[0m
+[ 14%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/coordinate_descent_minimizer.cc.o[0m
+[ 15%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/compressed_row_sparse_matrix.cc.o[0m
+[ 16%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/callbacks.cc.o[0m
+[ 17%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/covariance.cc.o[0m
+[ 17%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/context_impl.cc.o[0m
+[ 18%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/covariance_impl.cc.o[0m
+[ 18%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/cxsparse.cc.o[0m
+[ 19%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/dense_normal_cholesky_solver.cc.o[0m
+[ 20%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/dense_qr_solver.cc.o[0m
+[ 20%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/dense_sparse_matrix.cc.o[0m
+[ 21%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/detect_structure.cc.o[0m
+[ 21%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/dogleg_strategy.cc.o[0m
+[ 22%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/dynamic_compressed_row_jacobian_writer.cc.o[0m
+[ 23%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/dynamic_compressed_row_sparse_matrix.cc.o[0m
+[ 23%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/dynamic_sparse_normal_cholesky_solver.cc.o[0m
+[ 24%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/evaluator.cc.o[0m
+[ 25%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/eigensparse.cc.o[0m
+[ 25%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/file.cc.o[0m
+[ 26%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/float_suitesparse.cc.o[0m
+[ 26%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/float_cxsparse.cc.o[0m
+[ 27%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/function_sample.cc.o[0m
+[ 28%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/gradient_checker.cc.o[0m
+[ 28%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/gradient_checking_cost_function.cc.o[0m
+[ 29%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/gradient_problem.cc.o[0m
+[ 30%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/gradient_problem_solver.cc.o[0m
+[ 30%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/implicit_schur_complement.cc.o[0m
+[ 31%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/inner_product_computer.cc.o[0m
+[ 31%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/is_close.cc.o[0m
+[ 32%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/iterative_refiner.cc.o[0m
+[ 33%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/iterative_schur_complement_solver.cc.o[0m
+[ 33%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/levenberg_marquardt_strategy.cc.o[0m
+[ 34%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/lapack.cc.o[0m
+[ 35%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/line_search.cc.o[0m
+[ 35%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/line_search_direction.cc.o[0m
+[ 36%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/line_search_minimizer.cc.o[0m
+[ 36%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/line_search_preprocessor.cc.o[0m
+[ 37%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/linear_least_squares_problems.cc.o[0m
+[ 38%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/linear_operator.cc.o[0m
+[ 38%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/linear_solver.cc.o[0m
+[ 39%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/local_parameterization.cc.o[0m
+[ 40%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/loss_function.cc.o[0m
+[ 40%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/low_rank_inverse_hessian.cc.o[0m
+[ 41%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/minimizer.cc.o[0m
+[ 41%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/normal_prior.cc.o[0m
+[ 42%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/parallel_utils.cc.o[0m
+[ 43%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/parameter_block_ordering.cc.o[0m
+[ 43%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/partitioned_matrix_view.cc.o[0m
+[ 44%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/polynomial.cc.o[0m
+[ 45%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/preconditioner.cc.o[0m
+[ 45%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/preprocessor.cc.o[0m
+[ 46%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/problem.cc.o[0m
+[ 46%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/problem_impl.cc.o[0m
+[ 47%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/program.cc.o[0m
+[ 48%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/reorder_program.cc.o[0m
+[ 48%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/residual_block.cc.o[0m
+[ 49%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/residual_block_utils.cc.o[0m
+[ 50%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/schur_complement_solver.cc.o[0m
+[ 50%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/schur_eliminator.cc.o[0m
+[ 51%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/schur_jacobi_preconditioner.cc.o[0m
+[ 51%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/schur_templates.cc.o[0m
+[ 52%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/scratch_evaluate_preparer.cc.o[0m
+[ 53%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/single_linkage_clustering.cc.o[0m
+[ 53%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/solver.cc.o[0m
+[ 54%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/solver_utils.cc.o[0m
+[ 55%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/sparse_matrix.cc.o[0m
+[ 55%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/sparse_cholesky.cc.o[0m
+[ 56%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/sparse_normal_cholesky_solver.cc.o[0m
+[ 56%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/subset_preconditioner.cc.o[0m
+[ 57%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/split.cc.o[0m
+[ 58%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/stringprintf.cc.o[0m
+[ 58%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/suitesparse.cc.o[0m
+[ 59%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/thread_token_provider.cc.o[0m
+[ 60%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/triplet_sparse_matrix.cc.o[0m
+[ 60%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/trust_region_preprocessor.cc.o[0m
+[ 61%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/trust_region_minimizer.cc.o[0m
+[ 61%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/trust_region_step_evaluator.cc.o[0m
+[ 62%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/trust_region_strategy.cc.o[0m
+[ 63%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/types.cc.o[0m
+[ 63%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/visibility.cc.o[0m
+[ 64%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/visibility_based_preconditioner.cc.o[0m
+[ 65%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/wall_time.cc.o[0m
+[ 65%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_2_2.cc.o[0m
+[ 66%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_2_3.cc.o[0m
+[ 66%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_2_4.cc.o[0m
+[ 67%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_2_d.cc.o[0m
+[ 68%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_3_3.cc.o[0m
+[ 68%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_3_4.cc.o[0m
+[ 69%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_3_6.cc.o[0m
+[ 70%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_3_9.cc.o[0m
+[ 70%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_3_d.cc.o[0m
+[ 71%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_4_3.cc.o[0m
+[ 71%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_4_4.cc.o[0m
+[ 72%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_4_6.cc.o[0m
+[ 73%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_4_8.cc.o[0m
+[ 73%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_4_9.cc.o[0m
+[ 74%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_4_d.cc.o[0m
+[ 75%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_2_d_d.cc.o[0m
+[ 75%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_3_3_3.cc.o[0m
+[ 76%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_4_4_2.cc.o[0m
+[ 76%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_4_4_3.cc.o[0m
+[ 77%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_4_4_4.cc.o[0m
+[ 78%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_4_4_d.cc.o[0m
+[ 78%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/partitioned_matrix_view_d_d_d.cc.o[0m
+[ 79%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_2_2.cc.o[0m
+[ 80%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_2_3.cc.o[0m
+[ 80%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_2_4.cc.o[0m
+[ 81%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_2_d.cc.o[0m
+[ 81%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_3_3.cc.o[0m
+[ 82%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_3_4.cc.o[0m
+[ 83%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_3_6.cc.o[0m
+[ 83%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_3_9.cc.o[0m
+[ 84%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_3_d.cc.o[0m
+[ 85%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_4_3.cc.o[0m
+[ 85%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_4_4.cc.o[0m
+[ 86%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_4_6.cc.o[0m
+[ 86%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_4_8.cc.o[0m
+[ 87%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_4_9.cc.o[0m
+[ 88%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_4_d.cc.o[0m
+[ 88%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_2_d_d.cc.o[0m
+[ 89%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_3_3_3.cc.o[0m
+[ 90%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_4_4_2.cc.o[0m
+[ 90%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_4_4_3.cc.o[0m
+[ 91%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_4_4_4.cc.o[0m
+[ 91%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_4_4_d.cc.o[0m
+[ 92%] [32mBuilding CXX object ceres-solver/internal/ceres/CMakeFiles/ceres.dir/generated/schur_eliminator_d_d_d.cc.o[0m
+[ 93%] [32m[1mLinking CXX static library ../../lib/libceres.a[0m
+[ 93%] Built target ceres
+[ 95%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/lidar_odometry/src/optimization/Parameters.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/lidar_odometry/src/processing/IterativeClosestPoint.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/lidar_odometry/src/optimization/Factors.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/lidar_odometry/src/util/Config.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_ros.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/lidar_odometry/src/database/LidarFrame.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/lidar_odometry/src/processing/FeatureExtractor.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/lidar_odometry/src/processing/Estimator.cpp.o[0m
+[ 98%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/lidar_odometry/src/optimization/AdaptiveMEstimator.cpp.o[0m
+[ 99%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/lidar_odometry/src/util/MathUtils.cpp.o[0m
+[100%] [32m[1mLinking CXX executable lidar_odometry_node[0m
+[100%] Built target lidar_odometry_node
+-- Install configuration: "Release"
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/lib/lidar_odometry_ros/lidar_odometry_node
+-- Set runtime path of "/home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/lib/lidar_odometry_ros/lidar_odometry_node" to ""
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/launch
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/launch/lidar_odometry.launch.py
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/config
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/config/lidar_odometry_ros.yaml
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/rviz
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/rviz/lidar_odometry.rviz
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/ament_index/resource_index/package_run_dependencies/lidar_odometry_ros
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/ament_index/resource_index/parent_prefix_path/lidar_odometry_ros
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/ament_prefix_path.sh
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/ament_prefix_path.dsv
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/path.sh
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/environment/path.dsv
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.bash
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.sh
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.zsh
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/local_setup.dsv
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/package.dsv
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/ament_index/resource_index/packages/lidar_odometry_ros
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/cmake/lidar_odometry_rosConfig.cmake
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/cmake/lidar_odometry_rosConfig-version.cmake
+-- Installing: /home/eugene/source/lidar_odometry_ros_wrapper/install/lidar_odometry_ros/share/lidar_odometry_ros/package.xml
