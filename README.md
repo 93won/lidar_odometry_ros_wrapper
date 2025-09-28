@@ -2,6 +2,12 @@
 
 This package provides a ROS2 wrapper for the LiDAR Odometry system with Probabilistic Kernel Optimization (PKO). It enables real-time LiDAR-based odometry estimation in ROS2 environments.
 
+## Demo Video
+
+[![LiDAR Odometry Demo](https://img.youtube.com/vi/swrJY2EStrs/0.jpg)](https://youtu.be/swrJY2EStrs)
+
+Watch the demonstration of LiDAR odometry processing on KITTI dataset sequences.
+
 ## Features
 
 - ⚡ Real-time LiDAR odometry processing
