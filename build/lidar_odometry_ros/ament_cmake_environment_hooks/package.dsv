@@ -1,4 +1,0 @@
-source;share/lidar_odometry_ros/local_setup.bash
-source;share/lidar_odometry_ros/local_setup.dsv
-source;share/lidar_odometry_ros/local_setup.sh
-source;share/lidar_odometry_ros/local_setup.zsh

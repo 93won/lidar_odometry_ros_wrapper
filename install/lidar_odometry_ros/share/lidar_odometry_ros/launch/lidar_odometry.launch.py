@@ -1,1 +1,0 @@
-/home/eugene/source/lidar_odometry_ros_wrapper/launch/lidar_odometry.launch.py

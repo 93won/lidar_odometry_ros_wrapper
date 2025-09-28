@@ -1,1 +1,0 @@
-/home/eugene/source/lidar_odometry_ros_wrapper/build/lidar_odometry_ros/ceres-solver/CeresConfigVersion.cmake

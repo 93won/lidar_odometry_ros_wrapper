@@ -1,3 +1,0 @@
-[ 93%] Built target ceres
-[35m[1mConsolidate compiler generated dependencies of target lidar_odometry_node[0m
-[ 93%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_ros.cpp.o[0m

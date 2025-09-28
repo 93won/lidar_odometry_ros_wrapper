@@ -1,0 +1,58 @@
+# ROS2 Build artifacts
+build/
+install/
+log/
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# C++ artifacts
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.o
+*.obj
+*.exe
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ROS
+devel/
+logs/
+.catkin_workspace
+*.bag
+*.db3
+
+# System files
+Thumbs.db
+.directory
