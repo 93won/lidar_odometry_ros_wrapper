@@ -79,10 +79,10 @@ ros2 launch lidar_odometry_ros lidar_odometry.launch.py config_file:=/path/to/yo
 ```
 
 ### Quick Start
-```bash
+
 Download and play the sample ROS bag file from the link below in different terminal.
 https://drive.google.com/file/d/1U0tRSsc1PbEj_QThOHcD8l3qFkma3zjc/view?usp=sharing
-```
+
 
 
 ## KITTI Dataset Usage
