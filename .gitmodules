@@ -1,3 +1,4 @@
 [submodule "lidar_odometry"]
 	path = lidar_odometry
 	url = https://github.com/93won/lidar_odometry.git
+	branch = 43af2f5d9c15940e1449402abece0f0bfd86a8ce
