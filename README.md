@@ -42,8 +42,7 @@ cd lidar_odom_ws/src
 git clone https://github.com/93won/lidar_odometry_ros_wrapper.git
 cd lidar_odometry_ros_wrapper
 
-# Add lidar_odometry as submodule
-git submodule add https://github.com/93won/lidar_odometry.git lidar_odometry
+# Initialize and download submodules
 git submodule update --init --recursive
 ```
 
