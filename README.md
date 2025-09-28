@@ -78,6 +78,12 @@ source install/setup.bash
 ros2 launch lidar_odometry_ros lidar_odometry.launch.py config_file:=/path/to/your/workspace/lidar_odometry_ros_wrapper/lidar_odometry/config/kitti.yaml
 ```
 
+### Quick Start
+```bash
+Download and play the sample ROS bag file from the link below in different terminal.
+https://drive.google.com/file/d/1U0tRSsc1PbEj_QThOHcD8l3qFkma3zjc/view?usp=sharing
+```
+
 
 ## KITTI Dataset Usage
 
