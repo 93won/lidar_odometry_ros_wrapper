@@ -5,18 +5,18 @@
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <tf2_ros/transform_broadcaster.h>
-
-#include <pcl/point_cloud.h>
-#include <pcl/point_types.h>
-#include <pcl_conversions/pcl_conversions.h>
+#include <cstring>  // for memcpy
+#include <cmath>    // for std::isfinite
+#include <deque>
+#include <thread>
+#include <mutex>
+#include <condition_variable>
+#include <atomic>
 
 // Direct include - no more dynamic loading!
 #include "../lidar_odometry/src/processing/Estimator.h"
 #include "../lidar_odometry/src/database/LidarFrame.h"
 #include "../lidar_odometry/src/util/Config.h"
-
-using PointType = pcl::PointXYZ;
-using PointCloud = pcl::PointCloud<PointType>;
 
 class LidarOdometryRosWrapper : public rclcpp::Node {
 public:
@@ -48,11 +48,124 @@ public:
         cloud_sub_ = create_subscription<sensor_msgs::msg::PointCloud2>(
             "/velodyne_points", 10,
             std::bind(&LidarOdometryRosWrapper::cloud_callback, this, std::placeholders::_1));
+        
+        // Start processing thread
+        processing_thread_ = std::thread(&LidarOdometryRosWrapper::processing_loop, this);
             
         RCLCPP_INFO(this->get_logger(), "Simple LiDAR Odometry Ready!");
     }
+    
+    ~LidarOdometryRosWrapper() {
+        // Stop processing thread
+        should_stop_ = true;
+        queue_cv_.notify_all();
+        if (processing_thread_.joinable()) {
+            processing_thread_.join();
+        }
+    }
 
 private:
+    /**
+     * @brief Convert ROS PointCloud2 message to internal point cloud format
+     */
+    lidar_odometry::util::PointCloudPtr convert_ros_to_internal(const sensor_msgs::msg::PointCloud2::SharedPtr& ros_cloud) {
+        auto internal_cloud = std::make_shared<lidar_odometry::util::PointCloud>();
+        
+        // Parse the PointCloud2 message fields
+        int x_offset = -1, y_offset = -1, z_offset = -1;
+        for (const auto& field : ros_cloud->fields) {
+            if (field.name == "x") x_offset = field.offset;
+            else if (field.name == "y") y_offset = field.offset;
+            else if (field.name == "z") z_offset = field.offset;
+        }
+        
+        if (x_offset < 0 || y_offset < 0 || z_offset < 0) {
+            RCLCPP_ERROR(this->get_logger(), "Invalid PointCloud2 format: missing x, y, or z fields");
+            return internal_cloud;
+        }
+        
+        internal_cloud->reserve(ros_cloud->width * ros_cloud->height);
+        
+        // Extract points from the data buffer
+        const uint8_t* data_ptr = ros_cloud->data.data();
+        for (size_t i = 0; i < ros_cloud->width * ros_cloud->height; ++i) {
+            const uint8_t* point_data = data_ptr + i * ros_cloud->point_step;
+            
+            float x, y, z;
+            memcpy(&x, point_data + x_offset, sizeof(float));
+            memcpy(&y, point_data + y_offset, sizeof(float));
+            memcpy(&z, point_data + z_offset, sizeof(float));
+            
+            // Filter out invalid points
+            if (std::isfinite(x) && std::isfinite(y) && std::isfinite(z)) {
+                internal_cloud->push_back(x, y, z);
+            }
+        }
+        
+        return internal_cloud;
+    }
+    
+    /**
+     * @brief Convert internal point cloud to ROS PointCloud2 message directly (no PCL)
+     */
+    sensor_msgs::msg::PointCloud2 convert_internal_to_ros(
+        const lidar_odometry::util::PointCloudPtr& internal_cloud,
+        const std::string& frame_id = "base_link") {
+        
+        sensor_msgs::msg::PointCloud2 cloud_msg;
+        
+        if (!internal_cloud || internal_cloud->empty()) {
+            cloud_msg.header.frame_id = frame_id;
+            cloud_msg.height = 1;
+            cloud_msg.width = 0;
+            cloud_msg.is_dense = true;
+            return cloud_msg;
+        }
+        
+        // Set up the PointCloud2 message structure
+        cloud_msg.header.frame_id = frame_id;
+        cloud_msg.height = 1;
+        cloud_msg.width = internal_cloud->size();
+        cloud_msg.is_dense = true;
+        
+        // Define fields for x, y, z coordinates
+        cloud_msg.fields.resize(3);
+        
+        cloud_msg.fields[0].name = "x";
+        cloud_msg.fields[0].offset = 0;
+        cloud_msg.fields[0].datatype = sensor_msgs::msg::PointField::FLOAT32;
+        cloud_msg.fields[0].count = 1;
+        
+        cloud_msg.fields[1].name = "y";
+        cloud_msg.fields[1].offset = 4;
+        cloud_msg.fields[1].datatype = sensor_msgs::msg::PointField::FLOAT32;
+        cloud_msg.fields[1].count = 1;
+        
+        cloud_msg.fields[2].name = "z";
+        cloud_msg.fields[2].offset = 8;
+        cloud_msg.fields[2].datatype = sensor_msgs::msg::PointField::FLOAT32;
+        cloud_msg.fields[2].count = 1;
+        
+        cloud_msg.point_step = 12; // 3 * sizeof(float32)
+        cloud_msg.row_step = cloud_msg.point_step * cloud_msg.width;
+        
+        // Allocate memory for the data
+        cloud_msg.data.resize(cloud_msg.row_step);
+        
+        // Copy the point data
+        uint8_t* data_ptr = cloud_msg.data.data();
+        for (size_t i = 0; i < internal_cloud->size(); ++i) {
+            const auto& point = (*internal_cloud)[i];
+            
+            // Copy x, y, z coordinates as float32
+            memcpy(data_ptr + i * cloud_msg.point_step + 0, &point.x, sizeof(float));
+            memcpy(data_ptr + i * cloud_msg.point_step + 4, &point.y, sizeof(float));
+            memcpy(data_ptr + i * cloud_msg.point_step + 8, &point.z, sizeof(float));
+        }
+        
+        return cloud_msg;
+    }
+
     void load_config() {
         // Get config file parameter
         std::string config_file = this->get_parameter("config_file").as_string();
@@ -65,94 +178,67 @@ private:
         
         try {
             if (!config_file.empty()) {
-                // Use ConfigManager to load YAML configuration (like KittiPlayer)
+                // Use ConfigManager to load YAML configuration
                 lidar_odometry::util::ConfigManager::instance().load_from_file(config_file);
-                const auto& system_config = lidar_odometry::util::ConfigManager::instance().get_config();
-                
-                // Convert SystemConfig to EstimatorConfig (like KittiPlayer does)
-                config_ = lidar_odometry::processing::EstimatorConfig{};
-                
-                // Map system config values to estimator config (exactly like KittiPlayer)
-                config_.max_icp_iterations = system_config.max_iterations;
-                config_.icp_translation_threshold = system_config.translation_threshold;
-                config_.icp_rotation_threshold = system_config.rotation_threshold;
-                config_.correspondence_distance = system_config.max_correspondence_distance;
-                config_.voxel_size = system_config.voxel_size;
-                config_.map_voxel_size = system_config.map_voxel_size;
-                config_.max_range = system_config.max_range;
-                config_.keyframe_distance_threshold = system_config.keyframe_distance_threshold;
-                config_.keyframe_rotation_threshold = system_config.keyframe_rotation_threshold;
-                config_.max_solver_iterations = system_config.max_solver_iterations;
-                config_.parameter_tolerance = system_config.parameter_tolerance;
-                config_.function_tolerance = system_config.function_tolerance;
-                config_.max_correspondence_distance = system_config.max_correspondence_distance;
-                config_.min_correspondence_points = system_config.min_correspondence_points;
-                
-                // Map robust estimation settings
-                config_.use_adaptive_m_estimator = system_config.use_adaptive_m_estimator;
-                config_.loss_type = system_config.loss_type;
-                config_.scale_method = system_config.scale_method;
-                config_.fixed_scale_factor = system_config.fixed_scale_factor;
-                config_.mad_multiplier = system_config.mad_multiplier;
-                config_.min_scale_factor = system_config.min_scale_factor;
-                config_.max_scale_factor = system_config.max_scale_factor;
-                
-                // Map PKO/GMM parameters (CRITICAL: was missing in KittiPlayer!)
-                config_.num_alpha_segments = system_config.num_alpha_segments;
-                config_.truncated_threshold = system_config.truncated_threshold;
-                config_.gmm_components = system_config.gmm_components;
-                config_.gmm_sample_size = system_config.gmm_sample_size;
-                config_.pko_kernel_type = system_config.pko_kernel_type;
+                config_ = lidar_odometry::util::ConfigManager::instance().get_config();
                 
                 RCLCPP_INFO(this->get_logger(), "Successfully loaded config from YAML file");
-                RCLCPP_INFO(this->get_logger(), "Scale method: %s, Voxel size: %.1f", 
-                           config_.scale_method.c_str(), config_.voxel_size);
             } else {
-                throw std::runtime_error("No config file specified");
+                // Use default configuration
+                config_ = lidar_odometry::util::SystemConfig{};
+                RCLCPP_WARN(this->get_logger(), "Using default config parameters");
             }
             
         } catch (const std::exception& e) {
             RCLCPP_ERROR(this->get_logger(), "Failed to load YAML config: %s", e.what());
-            RCLCPP_WARN(this->get_logger(), "Using default KITTI config parameters as fallback");
+            RCLCPP_WARN(this->get_logger(), "Using default config parameters as fallback");
             
             // Fallback to default config
-            config_ = lidar_odometry::processing::EstimatorConfig{};
-            
-            // Set KITTI-suitable parameters as fallback
-            config_.max_icp_iterations = 10;
-            config_.icp_translation_threshold = 0.005f;
-            config_.icp_rotation_threshold = 0.005f;
-            config_.correspondence_distance = 1.0f;
-            config_.voxel_size = 0.4f;
-            config_.map_voxel_size = 0.4f;
-            config_.max_range = 40.0f;
-            config_.keyframe_distance_threshold = 5.0f;
-            config_.keyframe_rotation_threshold = 0.3f;
-            config_.max_solver_iterations = 10;
-            config_.parameter_tolerance = 1e-6;
-            config_.function_tolerance = 1e-6;
-            config_.max_correspondence_distance = 1.0f;
-            config_.min_correspondence_points = 50;
-            
-            // Robust estimation settings
-            config_.use_adaptive_m_estimator = true;
-            config_.loss_type = "huber";
-            config_.scale_method = "PKO";
-            config_.fixed_scale_factor = 1.0f;
-            config_.mad_multiplier = 1.4826f;
-            config_.min_scale_factor = 0.1f;
-            config_.max_scale_factor = 10.0f;
-            
-            // PKO/GMM parameters
-            config_.num_alpha_segments = 100;
-            config_.truncated_threshold = 10.0f;
-            config_.gmm_components = 2;
-            config_.gmm_sample_size = 100;
-            config_.pko_kernel_type = "huber";
+            config_ = lidar_odometry::util::SystemConfig{};
         }
     }
     
     void cloud_callback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
+        // Simply add message to queue - fast callback
+        {
+            std::lock_guard<std::mutex> lock(queue_mutex_);
+            msg_queue_.push_back(msg);
+            
+            // No frame dropping - process all frames
+            if (msg_queue_.size() > 50) {
+                RCLCPP_WARN(this->get_logger(), "Queue size large: %zu - consider optimizing processing", msg_queue_.size());
+            }
+        }
+        
+        // Notify processing thread
+        queue_cv_.notify_one();
+    }
+    
+    void processing_loop() {
+        RCLCPP_INFO(this->get_logger(), "Processing thread started");
+        
+        while (!should_stop_) {
+            sensor_msgs::msg::PointCloud2::SharedPtr msg;
+            
+            // Wait for new message
+            {
+                std::unique_lock<std::mutex> lock(queue_mutex_);
+                queue_cv_.wait(lock, [this] { return !msg_queue_.empty() || should_stop_; });
+                
+                if (should_stop_) break;
+                
+                msg = msg_queue_.front();
+                msg_queue_.pop_front();
+            }
+            
+            // Process the frame (original callback logic)
+            process_frame(msg);
+        }
+        
+        RCLCPP_INFO(this->get_logger(), "Processing thread stopped");
+    }
+    
+    void process_frame(const sensor_msgs::msg::PointCloud2::SharedPtr& msg) {
         frame_count_++;
         
         // Lazy initialization of estimator
@@ -161,16 +247,15 @@ private:
             RCLCPP_INFO(this->get_logger(), "Estimator initialized on first frame");
         }
         
-        // Convert to PCL
-        PointCloud::Ptr cloud(new PointCloud());
-        pcl::fromROSMsg(*msg, *cloud);
+        // Convert ROS message to internal format directly
+        auto internal_cloud = convert_ros_to_internal(msg);
         
-        RCLCPP_INFO(this->get_logger(), "Frame #%d - %zu points", frame_count_, cloud->size());
+        RCLCPP_INFO(this->get_logger(), "Frame #%d - %zu points", frame_count_, internal_cloud->size());
         
-        // Create LidarFrame directly
+        // Create LidarFrame with internal cloud format
         double timestamp = msg->header.stamp.sec + msg->header.stamp.nanosec * 1e-9;
         auto frame = std::make_shared<lidar_odometry::database::LidarFrame>(
-            frame_count_, timestamp, cloud);
+            frame_count_, timestamp, internal_cloud);
         
         // Store current frame for feature publishing
         current_frame_ = frame;
@@ -223,16 +308,14 @@ private:
         
         odom_pub_->publish(odom_msg);
         
-        // Publish TF
-        geometry_msgs::msg::TransformStamped tf;
-        tf.header = odom_msg.header;
-        tf.child_frame_id = odom_msg.child_frame_id;
-        tf.transform.translation.x = t.x();
-        tf.transform.translation.y = t.y();
-        tf.transform.translation.z = t.z();
-        tf.transform.rotation = odom_msg.pose.pose.orientation;
-        
-        tf_broadcaster_->sendTransform(tf);
+        // Publish TF transforms using rosbag timestamp
+        geometry_msgs::msg::TransformStamped odom_to_base_tf;
+        odom_to_base_tf.header = odom_msg.header;
+        odom_to_base_tf.child_frame_id = odom_msg.child_frame_id;
+        odom_to_base_tf.transform.translation.x = t.x();
+        odom_to_base_tf.transform.translation.y = t.y();
+        odom_to_base_tf.transform.translation.z = t.z();
+        odom_to_base_tf.transform.rotation = odom_msg.pose.pose.orientation;
         
         // Also publish map -> odom transform (identity for now)
         geometry_msgs::msg::TransformStamped map_to_odom_tf;
@@ -247,7 +330,9 @@ private:
         map_to_odom_tf.transform.rotation.y = 0.0;
         map_to_odom_tf.transform.rotation.z = 0.0;
         
-        tf_broadcaster_->sendTransform(map_to_odom_tf);
+        // Send both transforms at once
+        std::vector<geometry_msgs::msg::TransformStamped> transforms = {map_to_odom_tf, odom_to_base_tf};
+        tf_broadcaster_->sendTransform(transforms);
     }
     
     void publish_map_points(const std_msgs::msg::Header& header) {
@@ -255,10 +340,13 @@ private:
 
         spdlog::info("Publishing map points - count: {}", map_cloud ? map_cloud->size() : 0);
         if (map_cloud && !map_cloud->empty()) {
-            sensor_msgs::msg::PointCloud2 map_msg;
-            pcl::toROSMsg(*map_cloud, map_msg);
+            // Convert internal cloud to ROS message directly (no PCL)
+            auto map_msg = convert_internal_to_ros(
+                std::const_pointer_cast<lidar_odometry::util::PointCloud>(map_cloud), 
+                "odom");
             map_msg.header = header;
             map_msg.header.frame_id = "odom";
+            
             map_pub_->publish(map_msg);
             RCLCPP_INFO(this->get_logger(), "Published map points: %zu", map_cloud->size());
         } else {
@@ -286,31 +374,23 @@ private:
             return;
         }
         
-        // Transform features to world coordinates (like PangolinViewer does)
+        // Transform features to world coordinates
         Eigen::Matrix4f transform_matrix = current_frame_->get_pose().matrix().cast<float>();
         
-        PointCloud::Ptr world_features(new PointCloud());
+        auto world_features = std::make_shared<lidar_odometry::util::PointCloud>();
         world_features->reserve(feature_cloud->size());
         
-        for (const auto& point : feature_cloud->points) {
+        for (size_t i = 0; i < feature_cloud->size(); ++i) {
+            const auto& point = (*feature_cloud)[i];
             // Transform point to world coordinates
             Eigen::Vector4f local_point(point.x, point.y, point.z, 1.0f);
             Eigen::Vector4f world_point = transform_matrix * local_point;
             
-            PointType world_pt;
-            world_pt.x = world_point.x();
-            world_pt.y = world_point.y(); 
-            world_pt.z = world_point.z();
-            world_features->points.push_back(world_pt);
+            world_features->push_back(world_point.x(), world_point.y(), world_point.z());
         }
         
-        world_features->width = world_features->points.size();
-        world_features->height = 1;
-        world_features->is_dense = false;
-        
-        // Publish transformed features
-        sensor_msgs::msg::PointCloud2 feature_msg;
-        pcl::toROSMsg(*world_features, feature_msg);
+        // Convert to ROS message directly (no PCL)
+        auto feature_msg = convert_internal_to_ros(world_features, "odom");
         feature_msg.header = header;
         feature_msg.header.frame_id = "odom";  // World coordinate frame
         features_pub_->publish(feature_msg);
@@ -351,13 +431,14 @@ private:
         trajectory_pub_->publish(path);
     }
     
-    // Simple members - no complex threading!
+    // Core components
     std::shared_ptr<lidar_odometry::processing::Estimator> estimator_;
-    lidar_odometry::processing::EstimatorConfig config_;
+    lidar_odometry::util::SystemConfig config_;
     
     // Store current frame for feature publishing
     std::shared_ptr<lidar_odometry::database::LidarFrame> current_frame_;
     
+    // ROS components
     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr cloud_sub_;
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr map_pub_;
@@ -366,6 +447,13 @@ private:
     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr trajectory_pub_;
     
     std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+    
+    // Threading components
+    std::deque<sensor_msgs::msg::PointCloud2::SharedPtr> msg_queue_;
+    std::mutex queue_mutex_;
+    std::condition_variable queue_cv_;
+    std::thread processing_thread_;
+    std::atomic<bool> should_stop_{false};
     
     int frame_count_ = 0;
     std::vector<geometry_msgs::msg::PoseStamped> trajectory_;

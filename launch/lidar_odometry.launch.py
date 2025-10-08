@@ -75,6 +75,13 @@ def generate_launch_description():
         description='Whether to launch RViz'
     )
     
+    # Simulation time argument for rosbag playback
+    use_sim_time_arg = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='true',
+        description='Use simulation time (needed for rosbag playback)'
+    )
+    
     # LiDAR Odometry Node
     lidar_odometry_node = Node(
         package='lidar_odometry_ros',
@@ -83,6 +90,7 @@ def generate_launch_description():
         output='screen',
         parameters=[{
             'config_file': LaunchConfiguration('config_file'),
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
         }],
         remappings=[
             ('velodyne_points', LaunchConfiguration('pointcloud_topic')),
@@ -100,8 +108,12 @@ def generate_launch_description():
         package='rviz2',
         executable='rviz2',
         name='rviz2',
-        arguments=['-d', rviz_config_file],
+        arguments=['-d', rviz_config_file, '--ros-args', '--log-level', 'FATAL'],
         output='screen',
+        parameters=[{
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+        }],
+        additional_env={'RCUTILS_LOGGING_SEVERITY_THRESHOLD': 'FATAL'},
         condition=IfCondition(LaunchConfiguration('enable_rviz'))
     )
     
@@ -117,6 +129,7 @@ def generate_launch_description():
         min_range_arg,
         pointcloud_topic_arg,
         enable_rviz_arg,
+        use_sim_time_arg,
         LogInfo(msg="Starting LiDAR Odometry ROS Node..."),
         lidar_odometry_node,
         rviz_node,

@@ -20,8 +20,6 @@ find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(PCL 1.10 REQUIRED COMPONENTS common filters)
-find_package(pcl_conversions REQUIRED)
 find_package(fmt REQUIRED)
 find_package(Eigen3 REQUIRED)
 
@@ -50,7 +48,7 @@ include_directories(
   ${LIDAR_ODOMETRY_DIR}/src
   ${LIDAR_ODOMETRY_DIR}/app
   ${THIRDPARTY_DIR}/Sophus
-  ${PCL_INCLUDE_DIRS}
+  ${THIRDPARTY_DIR}/nanoflann/include
   ${EIGEN3_INCLUDE_DIR}
 )
 
@@ -59,12 +57,13 @@ set(LIDAR_ODOMETRY_SOURCES
     ${LIDAR_ODOMETRY_DIR}/src/database/LidarFrame.cpp
     ${LIDAR_ODOMETRY_DIR}/src/processing/FeatureExtractor.cpp
     ${LIDAR_ODOMETRY_DIR}/src/processing/Estimator.cpp
-    ${LIDAR_ODOMETRY_DIR}/src/processing/IterativeClosestPoint.cpp
+    ${LIDAR_ODOMETRY_DIR}/src/processing/DualFrameICPOptimizer.cpp
     ${LIDAR_ODOMETRY_DIR}/src/optimization/Parameters.cpp
     ${LIDAR_ODOMETRY_DIR}/src/optimization/Factors.cpp
     ${LIDAR_ODOMETRY_DIR}/src/optimization/AdaptiveMEstimator.cpp
     ${LIDAR_ODOMETRY_DIR}/src/util/Config.cpp
     ${LIDAR_ODOMETRY_DIR}/src/util/MathUtils.cpp
+    ${LIDAR_ODOMETRY_DIR}/src/util/PointCloudUtils.cpp
 )
 
 # Simple direct linking node
@@ -80,20 +79,15 @@ ament_target_dependencies(lidar_odometry_node
   geometry_msgs
   tf2_ros
   std_msgs
-  pcl_conversions
 )
 
 target_link_libraries(lidar_odometry_node
   ceres
-  ${PCL_LIBRARIES}
   fmt::fmt
   ${SPDLOG_LIBRARIES}
 )
 
-target_compile_definitions(lidar_odometry_node PRIVATE ${PCL_DEFINITIONS})
-
 target_include_directories(lidar_odometry_node PRIVATE
-  ${PCL_INCLUDE_DIRS}
   ${SPDLOG_INCLUDE_DIRS}
 )
 

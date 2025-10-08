@@ -74,14 +74,52 @@ source install/setup.bash
 
 ### Basic Usage
 ```bash
-# Launch the LiDAR odometry node (config_file is REQUIRED)
-ros2 launch lidar_odometry_ros lidar_odometry.launch.py config_file:=/path/to/your/workspace/lidar_odometry_ros_wrapper/lidar_odometry/config/kitti.yaml
+# Launch with default Velodyne topic
+ros2 launch lidar_odometry_ros lidar_odometry.launch.py \
+    config_file:=/path/to/your/workspace/lidar_odometry_ros_wrapper/lidar_odometry/config/kitti.yaml
+
+# Launch with custom topic (e.g., Livox)
+ros2 launch lidar_odometry_ros lidar_odometry.launch.py \
+    config_file:=/path/to/your/workspace/lidar_odometry_ros_wrapper/lidar_odometry/config/kitti.yaml \
+    pointcloud_topic:=/livox/pointcloud \
+    use_sim_time:=true
 ```
 
 ### Quick Start
 
-Download and play the sample ROS bag file from the link below in different terminal.
-https://drive.google.com/file/d/1U0tRSsc1PbEj_QThOHcD8l3qFkma3zjc/view?usp=sharing
+#### Option 1: KITTI Sample Data
+Download and play the KITTI sample ROS bag file:
+```bash
+# Download KITTI sample bag
+# https://drive.google.com/file/d/1U0tRSsc1PbEj_QThOHcD8l3qFkma3zjc/view?usp=sharing
+
+# Terminal 1: Launch odometry system
+ros2 launch lidar_odometry_ros lidar_odometry.launch.py \
+    config_file:=/path/to/your/workspace/lidar_odometry_ros_wrapper/lidar_odometry/config/kitti.yaml \
+    use_sim_time:=true
+
+# Terminal 2: Play KITTI bag file
+ros2 bag play /path/to/kitti_sample.bag --clock
+```
+
+#### Option 2: Livox MID360 Sample Data
+Download and play the Livox MID360 sample ROS bag file:
+```bash
+# Download Livox MID360 sample bag
+# https://drive.google.com/file/d/1UI6Qc5cdY8R61Odc7A6IU-jRWZgnCx2g/view?usp=sharing
+# Source: https://www.youtube.com/watch?v=u8siB0KLFLc
+
+# Terminal 1: Launch odometry system for Livox
+ros2 launch lidar_odometry_ros lidar_odometry.launch.py \
+    config_file:=/path/to/your/workspace/lidar_odometry_ros_wrapper/lidar_odometry/config/kitti.yaml \
+    use_sim_time:=true \
+    pointcloud_topic:=/livox/pointcloud
+
+# Terminal 2: Play Livox bag file
+ros2 bag play /path/to/livox_mid360_sample.bag --clock
+```
+
+**Note**: The Livox sample data uses standard `sensor_msgs/PointCloud2` messages, not Livox custom message format.
 
 
 
@@ -124,15 +162,38 @@ python3 kitti_to_rosbag.py \
     --frame_id velodyne
 ```
 
-### 3. Run with KITTI Data
-```bash
-# Terminal 1: Launch odometry system
-ros2 launch lidar_odometry_ros lidar_odometry.launch.py \
-    config_file:=$(pwd)/lidar_odometry/config/kitti.yaml
+### 3. Run Examples
 
-# Terminal 2: Play bag file
-ros2 bag play ~/kitti_data/kitti_seq07.db3
+#### Option A: KITTI Dataset
+```bash
+# Terminal 1: Launch odometry system for KITTI
+ros2 launch lidar_odometry_ros lidar_odometry.launch.py \
+    config_file:=$(pwd)/lidar_odometry/config/kitti.yaml \
+    use_sim_time:=true \
+    pointcloud_topic:=/velodyne_points
+
+# Terminal 2: Play KITTI bag file
+ros2 bag play ~/kitti_data/kitti_seq07.db3 --clock
 ```
+
+#### Option B: Livox MID360 Dataset
+```bash
+# Terminal 1: Launch odometry system for Livox MID360
+ros2 launch lidar_odometry_ros lidar_odometry.launch.py \
+    config_file:=$(pwd)/lidar_odometry/config/kitti.yaml \
+    use_sim_time:=true \
+    pointcloud_topic:=/livox/pointcloud
+
+# Terminal 2: Play Livox bag file
+ros2 bag play /path/to/your/livox_bag --clock
+```
+
+#### Launch Parameters
+- `config_file`: Path to YAML configuration file (required)
+- `use_sim_time`: Enable simulation time for bag playback (default: true)
+- `pointcloud_topic`: Input point cloud topic name (default: /velodyne_points)
+- `enable_rviz`: Launch RViz for visualization (default: true)
+
 
 ## License
 
