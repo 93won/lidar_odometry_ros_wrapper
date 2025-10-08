@@ -4,7 +4,8 @@ This package provides a ROS2 wrapper for the LiDAR Odometry system with Probabil
 
 ## Demo Video
 
-[![LiDAR Odometry Demo](https://img.youtube.com/vi/swrJY2EStrs/0.jpg)](https://www.youtube.com/watch?v=swrJY2EStrs)
+[![KITTI LiDAR Odometry Demo](https://img.youtube.com/vi/swrJY2EStrs/0.jpg)](https://www.youtube.com/watch?v=swrJY2EStrs)
+[![Mid360 LiDAR Odometry Demo](https://img.youtube.com/vi/HDPA_ILxCrE/0.jpg)](https://youtu.be/HDPA_ILxCrE)
 
 ## Features
 
