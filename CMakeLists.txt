@@ -6,8 +6,13 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
 endif()
 
+# Add compiler flags to avoid GCC internal compiler error with Ceres
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
+  # Reduce optimization for problematic files to avoid compiler crash
+  set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG -fno-strict-aliasing")
+  # Limit parallel compilation to avoid memory issues
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pipe")
 endif()
 
 # Set C++ standard
