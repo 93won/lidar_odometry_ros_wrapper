@@ -206,7 +206,7 @@ If you use this work, please cite:
 ```bibtex
 @article{choi2025probabilistic,
   title={Probabilistic Kernel Optimization for Robust State Estimation},
-  author={Choi, Seungwon and Kim, Tae-Wook},
+  author={Choi, Seungwon and Kim, Tae-Wan},
   journal={IEEE Robotics and Automation Letters},
   volume={10},
   number={3},
