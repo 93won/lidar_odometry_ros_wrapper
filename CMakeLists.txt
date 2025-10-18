@@ -32,6 +32,7 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(fmt REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 # Force system spdlog to avoid conflicts
 find_package(PkgConfig REQUIRED)
@@ -59,6 +60,8 @@ include_directories(
   ${LIDAR_ODOMETRY_DIR}/app
   ${THIRDPARTY_DIR}/Sophus
   ${THIRDPARTY_DIR}/nanoflann/include
+  ${THIRDPARTY_DIR}/LidarIris
+  ${THIRDPARTY_DIR}/LidarIris/fftm
   ${EIGEN3_INCLUDE_DIR}
 )
 
@@ -67,13 +70,17 @@ set(LIDAR_ODOMETRY_SOURCES
     ${LIDAR_ODOMETRY_DIR}/src/database/LidarFrame.cpp
     ${LIDAR_ODOMETRY_DIR}/src/processing/FeatureExtractor.cpp
     ${LIDAR_ODOMETRY_DIR}/src/processing/Estimator.cpp
-    ${LIDAR_ODOMETRY_DIR}/src/processing/DualFrameICPOptimizer.cpp
+    ${LIDAR_ODOMETRY_DIR}/src/processing/LoopClosureDetector.cpp
+    ${LIDAR_ODOMETRY_DIR}/src/optimization/IterativeClosestPointOptimizer.cpp
+    ${LIDAR_ODOMETRY_DIR}/src/optimization/PoseGraphOptimizer.cpp
     ${LIDAR_ODOMETRY_DIR}/src/optimization/Parameters.cpp
     ${LIDAR_ODOMETRY_DIR}/src/optimization/Factors.cpp
     ${LIDAR_ODOMETRY_DIR}/src/optimization/AdaptiveMEstimator.cpp
     ${LIDAR_ODOMETRY_DIR}/src/util/Config.cpp
     ${LIDAR_ODOMETRY_DIR}/src/util/MathUtils.cpp
     ${LIDAR_ODOMETRY_DIR}/src/util/PointCloudUtils.cpp
+    ${THIRDPARTY_DIR}/LidarIris/LidarIris.cpp
+    ${THIRDPARTY_DIR}/LidarIris/fftm/fftm.cpp
 )
 
 # Simple direct linking node
@@ -95,10 +102,12 @@ target_link_libraries(lidar_odometry_node
   ceres
   fmt::fmt
   ${SPDLOG_LIBRARIES}
+  ${OpenCV_LIBS}
 )
 
 target_include_directories(lidar_odometry_node PRIVATE
   ${SPDLOG_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
 )
 
 if(TARGET Eigen3::Eigen)

@@ -250,7 +250,7 @@ private:
         // Convert ROS message to internal format directly
         auto internal_cloud = convert_ros_to_internal(msg);
         
-        RCLCPP_INFO(this->get_logger(), "Frame #%d - %zu points", frame_count_, internal_cloud->size());
+        RCLCPP_DEBUG(this->get_logger(), "Frame #%d - %zu points", frame_count_, internal_cloud->size());
         
         // Create LidarFrame with internal cloud format
         double timestamp = msg->header.stamp.sec + msg->header.stamp.nanosec * 1e-9;
@@ -271,13 +271,13 @@ private:
             publish_odometry(msg, pose);
             
             // Publish visualization data
-            spdlog::info("Publishing visualization data");
+            spdlog::debug("Publishing visualization data");
             publish_map_points(msg->header);
             publish_current_cloud(msg);
             publish_features(msg->header);
             publish_trajectory(msg->header);
             
-            RCLCPP_INFO(this->get_logger(), "Processing successful - pose: [%.3f, %.3f, %.3f]", 
+            RCLCPP_DEBUG(this->get_logger(), "Processing successful - pose: [%.3f, %.3f, %.3f]", 
                        pose.translation().x(), pose.translation().y(), pose.translation().z());
         } else {
             // Even if processing failed, publish current cloud for debugging
@@ -338,7 +338,7 @@ private:
     void publish_map_points(const std_msgs::msg::Header& header) {
         auto map_cloud = estimator_->get_local_map();
 
-        spdlog::info("Publishing map points - count: {}", map_cloud ? map_cloud->size() : 0);
+        spdlog::debug("Publishing map points - count: {}", map_cloud ? map_cloud->size() : 0);
         if (map_cloud && !map_cloud->empty()) {
             // Convert internal cloud to ROS message directly (no PCL)
             auto map_msg = convert_internal_to_ros(
@@ -395,39 +395,46 @@ private:
         feature_msg.header.frame_id = "odom";  // World coordinate frame
         features_pub_->publish(feature_msg);
         
-        RCLCPP_INFO(this->get_logger(), "Published feature points: %zu", world_features->size());
+        RCLCPP_DEBUG(this->get_logger(), "Published feature points: %zu", world_features->size());
     }
     
     void publish_trajectory(const std_msgs::msg::Header& header) {
-        // Simple trajectory from current pose
+        // Get all keyframes from estimator to build complete trajectory
         nav_msgs::msg::Path path;
         path.header = header;
         path.header.frame_id = "odom";
         
-        const auto& pose = estimator_->get_current_pose();
+        // Get all keyframes using existing functions
+        size_t keyframe_count = estimator_->get_keyframe_count();
         
-        geometry_msgs::msg::PoseStamped pose_stamped;
-        pose_stamped.header = path.header;
+        std::vector<geometry_msgs::msg::PoseStamped> trajectory_poses;
+        trajectory_poses.reserve(keyframe_count);
         
-        const auto& t = pose.translation();
-        const auto q = pose.unit_quaternion();
-        
-        pose_stamped.pose.position.x = t.x();
-        pose_stamped.pose.position.y = t.y();
-        pose_stamped.pose.position.z = t.z();
-        pose_stamped.pose.orientation.w = q.w();
-        pose_stamped.pose.orientation.x = q.x();
-        pose_stamped.pose.orientation.y = q.y();
-        pose_stamped.pose.orientation.z = q.z();
-        
-        trajectory_.push_back(pose_stamped);
-        
-        // Limit trajectory size
-        if (trajectory_.size() > 1000) {
-            trajectory_.erase(trajectory_.begin());
+        for (size_t i = 0; i < keyframe_count; ++i) {
+            auto keyframe = estimator_->get_keyframe(i);
+            if (!keyframe) continue;
+            
+            const auto& pose = keyframe->get_pose();
+            
+            geometry_msgs::msg::PoseStamped pose_stamped;
+            pose_stamped.header = path.header;
+            pose_stamped.header.stamp = rclcpp::Time(static_cast<int64_t>(keyframe->get_timestamp() * 1e9));
+            
+            const auto& t = pose.translation();
+            const auto q = pose.unit_quaternion();
+            
+            pose_stamped.pose.position.x = t.x();
+            pose_stamped.pose.position.y = t.y();
+            pose_stamped.pose.position.z = t.z();
+            pose_stamped.pose.orientation.w = q.w();
+            pose_stamped.pose.orientation.x = q.x();
+            pose_stamped.pose.orientation.y = q.y();
+            pose_stamped.pose.orientation.z = q.z();
+            
+            trajectory_poses.push_back(pose_stamped);
         }
         
-        path.poses = trajectory_;
+        path.poses = trajectory_poses;
         trajectory_pub_->publish(path);
     }
     
@@ -456,7 +463,6 @@ private:
     std::atomic<bool> should_stop_{false};
     
     int frame_count_ = 0;
-    std::vector<geometry_msgs::msg::PoseStamped> trajectory_;
 };
 
 int main(int argc, char** argv) {
